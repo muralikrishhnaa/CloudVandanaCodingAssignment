@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../MDB/css/bootstrap.css">
+    <link rel="stylesheet" href="../MDB/css/mdb.css">
+    <link rel="stylesheet" href="../fontawesome/fa/css/all.css">
+    <style>
+    	div
+    	{
+    		margin-top: 5px;
+    	}
+    	.container
+    	{
+    		display: flex;
+    		justify-content: center;
+    	}
+    </style>
+</head>
+<body class="bg-primary">
+	<h1 class="text-white m-auto container">Customer Survey Form</h1>
+	<div class="container mt-5">
+		
+		<div class="row m-auto">
+			<div class="card">
+				<form class="form-group container-fluid">
+
+					<div class="row">
+						<div class="col">
+							<div>
+								<label>FirstName</label>
+								<input type="text" class="form-control" placeholder="Enter FirstName">
+							</div>
+						</div>
+						<div class="col">
+							<div>
+								<label>LastName</label>
+								<input type="text" class="form-control" placeholder="Enter LastName">
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<div>
+								<label>Date Of Birth</label>
+								<input type="date" class="form-control">
+							</div>
+						</div>
+						<div class="col">
+							<div>
+								<label>Country</label>
+								<select class="form-control">
+									<option>Select</option>
+									<option>India</option>
+									<option>USA</option>
+									<option>UK</option>
+									<option>Russia</option>
+									<option>China</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<div>
+								<label>Gender</label></br>
+								<input type="radio" name="gender">Male
+								<input type="radio" name="gender">Female
+							</div>
+						</div>
+						<div class="col">
+							<div>
+								<label>Profession</label>
+								<input type="text" class="form-control" placeholder="Enter Profession">
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<div>
+								<label>Email</label>
+								<input type="email" class="form-control" placeholder="Enter Email">
+							</div>
+						</div>
+						<div class="col">
+							<div>
+								<label>Mobile Number</label>
+								<input type="number" class="form-control" placeholder="Enter Mobile Number">
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<input type="submit" class="btn btn-md bg-primary">
+						<input type="reset" class="btn btn-md bg-primary">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="footer text-center text-white mt-5">
+		<span>&copy; 2023 customer Survey Form. All Rights Reserved | Designed by own</span>
+	</div>
+</body>
+</html>
