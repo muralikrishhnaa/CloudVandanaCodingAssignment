@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" href="../MDB/css/bootstrap.css">
+    <link rel="stylesheet" href="../MDB/css/mdb.css">
+    <link rel="stylesheet" href="../fontawesome/fa/css/all.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <div class="card m-auto">
+                    <div class="card-header bg-primary text-center text-white">
+                        <h1>Calculator</h1>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <input type="number" class="form-control" id="number1" placeholder="Enter First Number">
+                            <input type="number"class="form-control mt-4 mb-4" id="number2" placeholder="Enter Second Number">
+                        </form>
+                        <div class="row text-center">
+                            <div class="col-3">
+                               <button class="btn btn-success" id="add" onclick="driver(add)">Add</button>
+                            </div>
+                            <div class="col-3">
+                                 <button class="btn btn-success" id="sub" onclick="driver(sub)">Sub</button>
+                            </div>
+                            <div class="col-3">
+                                 <button class="btn btn-success" id="mul" onclick="driver(mul)">Mul</button>
+                            </div>
+                            <div class="col-3">
+                                 <button class="btn btn-success" id="div" onclick="driver(div)">Div</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <h1 id="h1-tag" class="text-center"></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- script code -->
+<script src="calculator.js"></script>
+</body>
+</html>
