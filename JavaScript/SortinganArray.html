@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sorting</title>
+</head>
+<body>
+<h1 id="display"></h1>
+
+<!-- Script Code -->
+<script>
+	let size=Number(prompt("enter size:"));
+	let a=[];
+	for(let i=0;i<size;i++)
+	{
+		a[i]=Number(prompt(`enter number ${i+1}:`))
+	}
+	function sort()
+	{
+		for(let i=0;i<a.length-1;i++)
+		{
+			for(let j=0;j<a.length-1-i;j++)
+			{
+				if(a[j]<a[j+1])
+				{
+					let temp=a[j];
+					a[j]=a[j+1];
+					a[j+1]=temp;
+				}
+			}
+		}
+	}
+	sort();
+	console.log(a);
+	document.getElementById("display").innerText=a;
+</script>
+</body>
+</html>
